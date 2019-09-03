@@ -19,7 +19,7 @@ class Tweet extends Component {
     }
 
     else if (result > 60*60) {
-        output = `${Math.round(result/60)}h`;
+        output = `${Math.round(result/(60*60))}h`;
     }
     
 
@@ -29,7 +29,7 @@ class Tweet extends Component {
   render() {
     return (
         
-      <div className="container wrapper">
+      <div className="container wrapper mt-2">
         <div className="row p-2">
           <div className="col-auto">
             <img className="prof_pic" src={this.state.profPicUrl} alt="" />
