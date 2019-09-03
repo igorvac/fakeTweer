@@ -3,8 +3,6 @@ import React, { Component } from "react";
 class Tweet extends Component {
   state = require('./fakeDatabase.json');
 
-  handleData(){
-  }
 
   getTime() {
     let d = Date.now();
